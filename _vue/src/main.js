@@ -5,6 +5,8 @@ import App from './App';
 
 import router from './router';
 
+import store from './store';
+
 Vue.config.productionTip = false;
 
 new Vue({
@@ -13,5 +15,6 @@ new Vue({
   components: {
     App: App
   },
-  router: router
+  router: router,
+  store: store
 });
