@@ -3,15 +3,11 @@
     h1 {{msg}}
 </template>
 
-<script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+<script lang="coffee">
+module.exports =
+    name: 'hello'
+    data: () ->
+        msg: 'Hello World!'
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
