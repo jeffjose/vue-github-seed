@@ -1,23 +1,23 @@
 <template>
   <div id="app">
-  hello world!
+    <img src="./assets/logo.png">
+    <router-view></router-view>
   </div>
 </template>
 
-<script lang="coffee">
-
-#c = require './components/c'
-
-module.exports =
-  name: 'app',
-  #components: {c}
-  #mixins: [u]
-  #methods:
-      #a: a
-  data: () ->
-    a: 'foo'
+<script>
+export default {
+  name: 'app'
+}
 </script>
 
-<style scoped lang="less">
-
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
