@@ -1,17 +1,19 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
-</template>
+<template lang="pug">
 
-<script>
-export default {
+  #app
+    img(src="./assets/logo.png")
+    router-view
+
+</template>
+<script lang="coffee">
+
+export default
   name: 'app'
-}
+
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,4 +22,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

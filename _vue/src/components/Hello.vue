@@ -4,10 +4,12 @@
 </template>
 
 <script lang="coffee">
-module.exports =
+
+export default
     name: 'hello'
     data: () ->
         msg: 'Hello World!'
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
